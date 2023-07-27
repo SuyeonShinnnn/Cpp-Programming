@@ -19,8 +19,8 @@ public:
         int index = date.find('/');
         this -> month = stoi(date.substr(index+1));
 
-	    index = date.find('/', index + 1);
-	    this->day = stoi(date.substr(index + 1));
+	    index = date.find('/', index + 1); //index+1부터 '/' 검색
+	    this->day = stoi(date.substr(index + 1)); // date의 인덱스 index+1에서부터 문자열 리턴
     }
     void show()
     {
