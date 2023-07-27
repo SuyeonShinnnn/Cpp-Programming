@@ -32,7 +32,7 @@ int main()
     cout << endl << endl << "-- 2에서 " << "4까지의 랜덤 정수 10 개 --" << endl;
     for(int i=0; i<10; i++)
     {
-        int n = r.nextInRange(2, 6);
+        int n = r.nextInRange(2, 4);
         cout << n << ' ';
     }
     cout << endl;
