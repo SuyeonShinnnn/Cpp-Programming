@@ -15,7 +15,7 @@ public:
     {
         int num = -1;
 
-        while(num%2 != 0)
+        while(num%2 != 0)//num이 짝수가 될 때까지 반복
         {
             num = rand() % (RAND_MAX + 1);
         }
