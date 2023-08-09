@@ -1,20 +1,20 @@
 #include <iostream>
 using namespace std;
 
-class Stack
+class MyIntStack
 {
     int p[10];
     int tos;
 public:
-    Stack();
+    MyIntStack();
     bool push(int n);
     bool pop(int& n);
 };
-Stack::Stack()
+MyIntStack::MyIntStack()
 {
     tos = 0;
 }
-bool Stack::push(int n)
+bool MyIntStack::push(int n)
 {
     if(tos >= 10)
         return false;
@@ -24,7 +24,7 @@ bool Stack::push(int n)
         return true;
     }
 }
-bool Stack::pop(int& n)
+bool MyIntStack::pop(int& n)
 {
     if(tos <= 0)
         return false;
@@ -36,7 +36,7 @@ bool Stack::pop(int& n)
 }
 int main()
 {
-    Stack a;
+    MyIntStack a;
     for(int i = 0; i < 11; i++)
     {
         if(a.push(i)) cout << i << ' ';
